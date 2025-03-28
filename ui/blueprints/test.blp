@@ -1,0 +1,50 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $MainWindow: Adw.ApplicationWindow {
+  default-width: 600;
+  default-height: 500;
+  width-request: 300;
+  height-request: 300;
+
+  content: Gtk.Box {
+    orientation: vertical;
+    height-request: -1;
+
+    Adw.HeaderBar {
+      title-widget: Adw.WindowTitle {
+        title: _("Adwaita + Crystal + Blueprint");
+      };
+    }
+
+    Box {
+      orientation: vertical;
+      halign: center;
+      valign: center;
+      vexpand: true;
+
+      Gtk.Image {
+        width-request: 128;
+        height-request: 128;
+        file: "src/icons/crystal.svg";
+        margin-bottom: 32;
+      }
+
+      Label {
+        label: _("App working successfully!");
+        margin-bottom: 8;
+
+        css-classes: [
+          "title-1",
+        ];
+
+        halign: center;
+      }
+
+      Label {
+        label: _("This is a Gnome application base working with libadwaita 1.0 and Crystal 1.15.0.");
+        halign: center;
+      }
+    }
+  };
+}

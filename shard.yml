@@ -1,0 +1,17 @@
+name: gnome-app
+version: 0.1.0
+
+authors:
+  - Zohir Tamda <tamda.zohir.pro@gmail.com>
+
+targets:
+  gnome-app:
+    main: src/gnome-app.cr
+
+dependencies:
+  libadwaita:
+    github: GeopJr/libadwaita.cr
+
+crystal: '>= 1.15.0'
+
+license: MIT
