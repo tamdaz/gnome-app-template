@@ -1,12 +1,7 @@
-# https://taskfile.dev
-
 version: '3'
-
-vars:
-  GREETING: Hello, World!
 
 tasks:
   dev:
     cmds:
-      - blueprint-compiler compile ui/blueprints/** --output src/resources/ui/**
+      - blueprint-compiler compile ui/** --output src/resources/ui/**
       - shards run app
