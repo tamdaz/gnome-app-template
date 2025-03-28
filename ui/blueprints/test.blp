@@ -1,11 +1,12 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $MainWindow: Adw.ApplicationWindow {
+template $App-Window-MainWindow: Adw.ApplicationWindow {
   default-width: 600;
   default-height: 500;
   width-request: 300;
   height-request: 300;
+  title: _("Adwaita + Crystal + Blueprint");
 
   content: Gtk.Box {
     orientation: vertical;
@@ -26,7 +27,7 @@ template $MainWindow: Adw.ApplicationWindow {
       Gtk.Image {
         width-request: 128;
         height-request: 128;
-        file: "src/icons/crystal.svg";
+        resource: "/fr/tamdaz/icons/crystal.svg";
         margin-bottom: 32;
       }
 

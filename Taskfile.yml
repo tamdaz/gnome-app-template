@@ -8,5 +8,5 @@ vars:
 tasks:
   dev:
     cmds:
-      - blueprint-compiler compile ui/blueprints/** --output src/ui/**
-      - shards run gnome-app
+      - blueprint-compiler compile ui/blueprints/** --output src/resources/ui/**
+      - shards run app

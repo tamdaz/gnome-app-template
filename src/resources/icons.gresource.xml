@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/fr/tamdaz/icons">
+    <file preprocess="xml-stripblanks">crystal.svg</file>
+  </gresource>
+</gresources>

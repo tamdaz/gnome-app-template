@@ -5,8 +5,8 @@ authors:
   - Zohir Tamda <tamda.zohir.pro@gmail.com>
 
 targets:
-  gnome-app:
-    main: src/gnome-app.cr
+  app:
+    main: src/app.cr
 
 dependencies:
   libadwaita:
