@@ -30,6 +30,10 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             <property name="orientation">1</property>
             <property name="halign">3</property>
             <property name="valign">3</property>
+            <property name="margin-top">6</property>
+            <property name="margin-bottom">6</property>
+            <property name="margin-start">6</property>
+            <property name="margin-end">6</property>
             <property name="vexpand">true</property>
             <child>
               <object class="GtkImage">
@@ -43,8 +47,53 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
               <object class="GtkLabel">
                 <property name="label" translatable="yes">App working successfully!</property>
                 <property name="margin-bottom">8</property>
-                <property name="css-classes">title-1</property>
-                <property name="halign">3</property>
+                <style>
+                  <class name="title-1"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSpinner">
+                <property name="width-request">64</property>
+                <property name="height-request">64</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow">
+                <property name="title" translatable="yes">My Switch Row</property>
+                <property name="active">true</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title" translatable="yes">Toggle Group</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title" translatable="yes">Option 1</property>
+                    <property name="activatable">true</property>
+                    <child>
+                      <object class="AdwToggle">
+                        <property name="enabled">true</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title" translatable="yes">Option 2</property>
+                    <property name="activatable">true</property>
+                    <child>
+                      <object class="AdwToggle">
+                        <property name="enabled">true</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwToggle">
+                <property name="enabled">false</property>
               </object>
             </child>
             <child>

@@ -22,6 +22,10 @@ template $App-Window-MainWindow: Adw.ApplicationWindow {
       orientation: vertical;
       halign: center;
       valign: center;
+      margin-top: 6;
+      margin-bottom: 6;
+      margin-start: 6;
+      margin-end: 6;
       vexpand: true;
 
       Gtk.Image {
@@ -35,11 +39,7 @@ template $App-Window-MainWindow: Adw.ApplicationWindow {
         label: _("App working successfully!");
         margin-bottom: 8;
 
-        css-classes: [
-          "title-1",
-        ];
-
-        halign: center;
+        styles ["title-1"]
       }
 
       Label {

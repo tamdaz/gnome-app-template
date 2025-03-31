@@ -1,5 +1,5 @@
 require "libadwaita"
-require "./windows/**"
+require "./windows/*"
 
 module App
   VERSION = "0.1.0"
